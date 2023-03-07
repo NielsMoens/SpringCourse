@@ -9,8 +9,8 @@
           class="com.luv2code.springdemoone.RandomFortuneService">
     </bean>
 
-    <bean id="myCoach"
-          class="com.luv2code.springdemoone.TrackCoach"
+    <bean id="myGolfCoach"
+          class="com.luv2code.springdemoone.GolfCoach"
           scope="prototype">
 
         <!-- set up constructor injection-->
