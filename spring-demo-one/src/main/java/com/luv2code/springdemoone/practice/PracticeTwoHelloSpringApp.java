@@ -1,5 +1,6 @@
-package com.luv2code.springdemoone;
+package com.luv2code.springdemoone.practice;
 
+import com.luv2code.springdemoone.Coach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class PracticeTwoHelloSpringApp {
