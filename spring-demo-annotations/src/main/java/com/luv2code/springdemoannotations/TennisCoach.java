@@ -1,5 +1,7 @@
 package com.luv2code.springdemoannotations;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -16,6 +18,17 @@ public class TennisCoach implements Coach {
         System.out.println(">> Tennis Coach: inside default constructor");
     }
 
+    //  define my init method
+    @PostConstruct
+    public void doMyStart() {
+        System.out.println(">> Tennis Coach: inside Do my start ");
+    }
+
+    //  define my destroy method
+    @PreDestroy
+    public void doMyCleanupStuff() {
+        System.out.println(">> Tennis Coach: inside DoMyCleanupStuff");
+    }
 
     // random name also works
 //    @Autowired
