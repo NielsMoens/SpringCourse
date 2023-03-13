@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dc17749-eceb-476d-aee6-e3d0348fd7c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../spring-demo-annotations/src/main/java/com/luv2code/springdemoannotations/TennisCoach.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-demo-annotations/src/main/java/com/luv2code/springdemoannotations/TennisCoach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678697100757</updated>
-      <workItem from="1678697102014" duration="7777000" />
+      <workItem from="1678697102014" duration="8348000" />
     </task>
     <servers />
   </component>
