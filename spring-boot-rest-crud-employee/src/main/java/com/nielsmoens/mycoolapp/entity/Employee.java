@@ -21,7 +21,6 @@ public class Employee {
     @Column(name = "email")
     private String email;
 
-
     // define constructors
     public Employee() {
 
@@ -34,7 +33,6 @@ public class Employee {
     }
 
     // define getter/setter
-
     public int getId() {
         return id;
     }
