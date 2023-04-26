@@ -1,7 +1,7 @@
 package com.nielsmoens.mycoolapp.rest;
 
 
-import com.nielsmoens.mycoolapp.entity.Employee;
+import com.nielsmoens.mycoolapp.rest.entity.Employee;
 import com.nielsmoens.mycoolapp.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

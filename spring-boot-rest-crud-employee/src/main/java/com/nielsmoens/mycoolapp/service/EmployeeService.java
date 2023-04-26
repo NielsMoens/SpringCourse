@@ -1,6 +1,6 @@
 package com.nielsmoens.mycoolapp.service;
 
-import com.nielsmoens.mycoolapp.entity.Employee;
+import com.nielsmoens.mycoolapp.rest.entity.Employee;
 
 import java.util.List;
 

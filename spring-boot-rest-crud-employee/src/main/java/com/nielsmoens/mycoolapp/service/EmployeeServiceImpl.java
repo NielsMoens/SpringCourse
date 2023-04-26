@@ -1,7 +1,7 @@
 package com.nielsmoens.mycoolapp.service;
 
 import com.nielsmoens.mycoolapp.dao.EmployeeRepository;
-import com.nielsmoens.mycoolapp.entity.Employee;
+import com.nielsmoens.mycoolapp.rest.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

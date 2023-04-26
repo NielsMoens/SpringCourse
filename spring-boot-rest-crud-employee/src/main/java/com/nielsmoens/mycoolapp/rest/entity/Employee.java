@@ -1,4 +1,4 @@
-package com.nielsmoens.mycoolapp.entity;
+package com.nielsmoens.mycoolapp.rest.entity;
 
 import jakarta.persistence.*;
 
