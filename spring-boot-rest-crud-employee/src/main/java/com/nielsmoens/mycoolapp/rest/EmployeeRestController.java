@@ -2,6 +2,7 @@ package com.nielsmoens.mycoolapp.rest;
 
 import com.nielsmoens.mycoolapp.entity.Employee;
 import com.nielsmoens.mycoolapp.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,7 +13,7 @@ public class EmployeeRestController {
 
     private final EmployeeService employeeService;
 
-    // quick and dirty: inject employee dao (use constructor injection)
+    @Autowired
     public EmployeeRestController(final EmployeeService theEmployeeService) {
         employeeService = theEmployeeService;
     }
@@ -36,15 +37,6 @@ public class EmployeeRestController {
 
         return theEmployee;
     }
-    // add mapping for PUT /employees - update existing employee
-
-    @PutMapping("/employees")
-    public Employee updateEmployee(@RequestBody final Employee theEmployee) {
-
-        final Employee dbEmployee = employeeService.save(theEmployee);
-
-        return dbEmployee;
-    }
 
     // add mapping for POST /employees - add new employee
 
@@ -61,6 +53,17 @@ public class EmployeeRestController {
         return dbEmployee;
     }
 
+    // add mapping for PUT /employees - update existing employee
+
+    @PutMapping("/employees")
+    public Employee updateEmployee(@RequestBody final Employee theEmployee) {
+
+        final Employee dbEmployee = employeeService.save(theEmployee);
+
+        return dbEmployee;
+    }
+
+    // add mapping for DELETE /employees/{employeeId} - delete employee
 
     @DeleteMapping("/employees/{employeeId}")
     public String deleteEmployee(@PathVariable final int employeeId) {
@@ -78,12 +81,5 @@ public class EmployeeRestController {
         return "Deleted employee id - " + employeeId;
     }
 
+
 }
-
-
-
-
-
-
-
-
